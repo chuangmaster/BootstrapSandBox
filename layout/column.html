@@ -16,7 +16,7 @@
 
 <h2>外層至少要有一層 container</h2>
 
-<div class="練習">
+<div class="container">
   <div class="row">
     <div class="col-6">
       <div class="box"></div>
@@ -34,10 +34,13 @@
 
 <div class="container">
   <div class="row">
-    <div class="練習">
+    <div class="col-4">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col-4">
+      <div class="box"></div>
+    </div>
+    <div class="col-4">
       <div class="box"></div>
     </div>
   </div>
@@ -48,16 +51,13 @@
 <div class="container">
   <div class="row">
     <div class="col-6">
-      <div class="box"></div>
+      <div class="box">1</div>
     </div>
     <div class="col-6">
-      <div class="box"></div>
+      <div class="box">2</div>
     </div>
     <div class="col-6">
-      <div class="box"></div>
-    </div>
-    <div class="col-6">
-      <div class="box"></div>
+      <div class="box">3</div>
     </div>
   </div>
 </div>
@@ -67,30 +67,30 @@
 
 <div class="container">
   <div class="row">
-    <div class="練習">
+    <div class="col">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col">
       <div class="box"></div>
     </div>
   </div>
-
+<hr>
   <div class="row">
     <div class="col-6">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col">
       <div class="box"></div>
     </div>
   </div>
 </div>
-
+<hr>
 <h4>彈性寬度</h4>
 
 <p>加入 col-auto</p>
@@ -100,9 +100,14 @@
     <div class="col-6">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col-auto">
       <div class="box">
         這裡有一句話
+      </div>
+    </div>
+    <div class="col-auto">
+      <div class="box">
+        依照內容給予 col 的寬度喔
       </div>
     </div>
   </div>
@@ -118,7 +123,7 @@
     </div>
     <div class="col-6">
       <!-- 在此加入另一個格線結構 -->
-      <!-- <div class="row">
+      <div class="row">
         <div class="col">
           <div class="box"></div>
         </div>
@@ -128,7 +133,7 @@
         <div class="col">
           <div class="box"></div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
@@ -138,23 +143,23 @@
 
 <p>情境：</p>
 <ul>
-  <li>桌面版 xl：4 大欄</li>
-  <li>平板 md：3 大欄</li>
   <li>行動版 xs：2 欄</li>
+  <li>平板 md：3 大欄</li>
+  <li>桌面版 xl：4 大欄</li>
 </ul>
 
 <div class="container">
   <div class="row">
-    <div class="練習 mb-3">
+    <div class="col-6 col-md-4 col-xl-3 mb-3">
       <div class="box"></div>
     </div>
-    <div class="練習 mb-3">
+    <div class="col-6 col-md-4 col-xl-3 mb-3">
       <div class="box"></div>
     </div>
-    <div class="練習 mb-3">
+    <div class="col-6 col-md-4 col-xl-3 mb-3">
       <div class="box"></div>
     </div>
-    <div class="練習 mb-3">
+    <div class="col-6 col-md-4 col-xl-3 mb-3">
       <div class="box"></div>
     </div>
   </div>
@@ -165,19 +170,20 @@
 
 <p>情境：</p>
 <ul>
-  <li>平板以上為 md：3 大欄</li>
   <li>行動版 xs：單 欄</li>
+  <li>平板以上為 md：3 大欄</li>
 </ul>
 
+<!-- 當有其他當有其他 col 中斷點， 可以不加入 col-12  -->
 <div class="container">
   <div class="row">
-    <div class="練習">
+    <div class="col-md-4">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col-md-4">
       <div class="box"></div>
     </div>
-    <div class="練習">
+    <div class="col-md-4">
       <div class="box"></div>
     </div>
   </div>
