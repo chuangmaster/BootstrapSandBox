@@ -35,7 +35,7 @@
 <div class="row">
   <div class="col-6"><div class="box"></div></div>
   <div class="col-6">
-    <div class="row 練習">
+    <div class="row gx-2">
       <div class="col-4">
         <div class="box"></div>
       </div>
@@ -52,8 +52,8 @@
 
 <h4>延伸：垂直 gutter</h4>
 <p>使用方式：gx, gy, g</p>
-
-<div class="row 練習">
+<!-- g 表示x,y都有 -->
+<div class="row gx-1 gy-2">
   <div class="col-6">
     <div class="box"></div>
   </div>
@@ -73,7 +73,7 @@
 
 <p>使用 gx-0 移除 gutter</p>
 
-<div class="row 練習">
+<div class="row gx-0">
   <div class="col-6">
     <div class="box"></div>
   </div>
@@ -91,11 +91,11 @@
 <h4>響應式</h4>
 
 <ul>
-  <li>桌面版使用大間距</li>
   <li>行動版移除間距</li>
+  <li>桌面版使用大間距</li>
 </ul>
 
-<div class="row 練習">
+<div class="row gx-0 gx-lg-4">
   <div class="col-6">
     <div class="box"></div>
   </div>
@@ -116,7 +116,7 @@
 
 <p>使用 row-cols-{欄數} 定義內層欄數</p>
 
-<div class="row 練習 g-3">
+<div class="row row-cols-3 g-3">
   <div class="col">
     <div class="box"></div>
   </div>
@@ -140,12 +140,12 @@
 <p>使用 row-cols-{中斷點}-{欄數} 來製作不同欄線規劃</p>
 
 <ul>
-  <li>桌面版 xl：4 大欄</li>
-  <li>平板 md：3 大欄</li>
   <li>行動版 xs：2 欄</li>
+  <li>平板 md：3 大欄</li>
+  <li>桌面版 xl：4 大欄</li>
 </ul>
-
-<div class="row 練習 g-3">
+<!-- 想切幾欄就直接填，不必自己去換算 -->
+<div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
   <div class="col">
     <div class="box"></div>
   </div>
