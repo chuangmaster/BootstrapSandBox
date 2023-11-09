@@ -19,11 +19,11 @@
 <p>flex 包含行內及區塊兩種（大多實戰以區塊為主，行內則較少使用）</p>
 
 <div class="demo">
-  <div class="練習 p-2 box">I'm a flexbox container!</div>
+  <div class="d-flex p-2 box">I'm a flexbox container!</div>
 </div>
 
 <div class="demo">
-  <div class="練習 p-2 box">I'm an inline flexbox container!</div>
+  <div class="d-inline-flex p-2 box">I'm an inline flexbox container!</div>
 </div>
 
 <h2>方向性</h2>
@@ -31,12 +31,12 @@
 <h4>使用 <code>.flex-row</code> 來設定水平的方向(瀏覽器預設值)，或是使用 <code>.flex-row-reverse</code> 來作水平方向的反轉。</h4>
 
 <div class="demo">
-  <div class="d-flex 練習 mb-3 box">
+  <div class="d-flex flex-row mb-3 box">
     <div class="p-2 box">Flex item 1</div>
     <div class="p-2 box">Flex item 2</div>
     <div class="p-2 box">Flex item 3</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex flex-row-reverse box">
     <div class="p-2 box">Flex item 1</div>
     <div class="p-2 box">Flex item 2</div>
     <div class="p-2 box">Flex item 3</div>
@@ -46,12 +46,12 @@
 <h4>使用 <code>.flex-column</code> 設置垂直方向，或者使用 <code>.flex-column-reverse</code> 作垂直方向的反轉。</h4>
 
 <div class="demo">
-  <div class="d-flex 練習 mb-3 box">
+  <div class="d-flex flex-column mb-3 box">
     <div class="p-2 box">Flex item 1</div>
     <div class="p-2 box">Flex item 2</div>
     <div class="p-2 box">Flex item 3</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex flex-column-reverse box">
     <div class="p-2 box">Flex item 1</div>
     <div class="p-2 box">Flex item 2</div>
     <div class="p-2 box">Flex item 3</div>
@@ -72,32 +72,32 @@
 </ul>
 
 <div class="demo">
-  <div class="d-flex 練習 box">
+  <div class="d-flex justify-content-start box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex justify-content-end box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex justify-content-center box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex justify-content-between box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex justify-content-around box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 box">
+  <div class="d-flex justify-content-evenly box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -117,27 +117,27 @@
 </ul>
 
 <div class="demo">
-  <div class="d-flex 練習 outer">
+  <div class="d-flex align-items-start outer">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 outer">
+  <div class="d-flex align-items-end outer">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 outer">
+  <div class="d-flex align-items-center outer">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 outer">
+  <div class="d-flex align-items-baseline outer">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
-  <div class="d-flex 練習 outer">
+  <div class="d-flex align-items-stretch outer">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -159,27 +159,27 @@
 <div class="demo">
   <div class="d-flex outer">
     <div class="p-2 box">Flex item</div>
-    <div class="練習 p-2 box">Aligned flex item</div>
+    <div class="align-self-start p-2 box">Aligned flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
   <div class="d-flex outer">
     <div class="p-2 box">Flex item</div>
-    <div class="練習 p-2 box">Aligned flex item</div>
+    <div class="align-self-end p-2 box">Aligned flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
   <div class="d-flex outer">
     <div class="p-2 box">Flex item</div>
-    <div class="練習 p-2 box">Aligned flex item</div>
+    <div class="align-self-center p-2 box">Aligned flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
   <div class="d-flex outer">
     <div class="p-2 box">Flex item</div>
-    <div class="練習 p-2 box">Aligned flex item</div>
+    <div class="align-self-baseline p-2 box">Aligned flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
   <div class="d-flex outer">
     <div class="p-2 box">Flex item</div>
-    <div class="練習 p-2 box">Aligned flex item</div>
+    <div class="align-self-stretch p-2 box">Aligned flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
 </div>
@@ -196,7 +196,7 @@
   </div>
     
   <div class="d-flex mb-3 box">
-    <div class="練習 p-2 box">Flex item</div>
+    <div class="me-auto p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
@@ -204,7 +204,7 @@
   <div class="d-flex mb-3 box">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
-    <div class="練習 p-2 box">Flex item</div>
+    <div class="ms-auto p-2 box">Flex item</div>
   </div>
 </div>
 
@@ -212,7 +212,7 @@
 
 <div class="demo">
   <div class="d-flex align-items-start flex-column mb-3 outer" style="height: 200px;">
-    <div class="練習 p-2 box">Flex item</div>
+    <div class="align-items- p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
   </div>
@@ -228,7 +228,7 @@
 <h6>使用 <code>.flex-nowrap</code> 完全不換行 (瀏覽器預設)，使用 <code>.flex-wrap</code> 進行換行，或使用 <code>.flex-wrap-reverse</code> 進行反向換行</h6>
 
 <div class="demo">
-  <div class="d-flex 練習" style="background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15); width: 8rem;">
+  <div class="d-flex flex-nowrap" style="background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15); width: 8rem;">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -238,7 +238,7 @@
 </div>
 
 <div class="demo">
-  <div class="d-flex 練習 box">
+  <div class="d-flex flex-wrap box">
     <div class="p-2 box">Flex item 1</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -260,7 +260,7 @@
 </div>
 
 <div class="demo">
-  <div class="d-flex 練習 box">
+  <div class="d-flex flex-wrap-reverse box">
     <div class="p-2 box">Flex item 1</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -286,9 +286,9 @@
 
 <div class="demo">
   <div class="d-flex flex-nowrap box">
-    <div class="order-練習 p-2 box">First flex item</div>
-    <div class="order-練習 p-2 box">Second flex item</div>
-    <div class="order-練習 p-2 box">Third flex item</div>
+    <div class="order-3 p-2 box">First flex item</div>
+    <div class="order-1 p-2 box">Second flex item</div>
+    <div class="order-2 p-2 box">Third flex item</div>
   </div>
 </div>
 
@@ -304,7 +304,8 @@
 </ul>
 
 <div class="demo">
-  <div class="d-flex align-content-練習 flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
+  align-content-start
+  <div class="d-flex align-content-start flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -326,7 +327,8 @@
 </div>
 
 <div class="demo">
-  <div class="d-flex align-content-練習 flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
+  align-content-end
+  <div class="d-flex align-content-end flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -348,7 +350,8 @@
 </div>
 
 <div class="demo">
-  <div class="d-flex align-content-練習 flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
+  align-content-center
+  <div class="d-flex align-content-center flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -370,7 +373,8 @@
 </div>
 
 <div class="demo">
-  <div class="d-flex align-content-練習 flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
+  align-content-around
+  <div class="d-flex align-content-around flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -392,7 +396,8 @@
 </div>
 
 <div class="demo">
-  <div class="d-flex align-content-練習 flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
+  align-content-stretch
+  <div class="d-flex align-content-s flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -414,6 +419,7 @@
 </div>
 
 <div class="demo">
+  此區域為套任何
   <div class="d-flex align-content-練習 flex-wrap" style="height: 200px; background-color: rgba(86,61,124,0.15); border: 1px solid rgba(86,61,124,0.15);">
     <div class="p-2 box">Flex item</div>
     <div class="p-2 box">Flex item</div>
@@ -449,7 +455,7 @@
     </div>
   </div>
 
-  <div class="d-flex align-items-center 練習">
+  <div class="d-flex align-items-center flex-row-reverse">
     <div class="flex-shrink-0">
       <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGdpcmx8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=60"  alt="...">
     </div>
