@@ -7,8 +7,8 @@
 <p>不需要所有內容都佔滿 12 欄寬</p>
 
 <div class="container">
-  <div class="">
-    <div class="">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
       <img src="https://images.unsplash.com/photo-1629896726841-a4ae281a4219?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" alt="" class="img-fluid">
       <h4 class="mt-2">This is a title</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis autem sed tempora, a dolor illo nobis, veniam voluptatibus quae quas consequuntur! Ab, quas? Illum explicabo eligendi, ab impedit omnis incidunt?</p>
@@ -26,24 +26,24 @@
 <p>可以善用 flex 特性，將部分內容進行推移達到等高的視覺效果</p>
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-4">
+  <div class="row align-items-stretch">
+    <div class="col-md-4 d-flex flex-column">
       <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="img-fluid" alt="">
       <h3 class="mt-3">This is a title</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis veritatis ipsam, quam architecto nesciunt voluptates earum. Saepe mollitia totam voluptas vitae aut minima excepturi rem atque cumque, cum molestiae?</p>
       <button type="button" class="btn btn-outline-primary d-block w-100">Detail</button>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 d-flex flex-column">
       <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="img-fluid" alt="">
       <h3 class="mt-3">This is a title</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis veritatis ipsam, quam architecto nesciunt voluptates earum.</p>
-      <button type="button" class="btn btn-outline-primary d-block w-100">Detail</button>
+      <button type="button" class="btn btn-outline-primary d-block w-100 mt-auto">Detail</button>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 d-flex flex-column" >
       <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" class="img-fluid" alt="">
       <h3 class="mt-3">This is a title</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae officiis veritatis ipsam, quam architecto nesciunt voluptates earum.</p>
-      <button type="button" class="btn btn-outline-primary d-block w-100">Detail</button>
+      <button type="button" class="btn btn-outline-primary d-block w-100 mt-auto">Detail</button>
     </div>
   </div>
 </div>
@@ -60,8 +60,17 @@
 </ul>
 
 <section class="bg-light">
-  <div class="">
-    <div class="">
+  <div class="container">
+    <div class="row justify-content-center align-items-center py-3 ">
+      <div class="col-md-5 ">
+        <img src="https://images.unsplash.com/photo-1630016537018-d46c0ad5c6bb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" alt="" class="img-fluid">
+      </div>
+      <div class="col-md-5">
+        <h3>This is a title</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta in sapiente repudiandae, sint voluptas placeat aliquam ratione, repellat inventore nostrum excepturi quibusdam quisquam magnam nihil nisi! Reprehenderit corrupti ratione perspiciatis.</p>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center py-3 flex-row-reverse">
       <div class="col-md-5">
         <img src="https://images.unsplash.com/photo-1630016537018-d46c0ad5c6bb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" alt="" class="img-fluid">
       </div>
@@ -70,16 +79,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta in sapiente repudiandae, sint voluptas placeat aliquam ratione, repellat inventore nostrum excepturi quibusdam quisquam magnam nihil nisi! Reprehenderit corrupti ratione perspiciatis.</p>
       </div>
     </div>
-    <div class="">
-      <div class="col-md-5">
-        <img src="https://images.unsplash.com/photo-1630016537018-d46c0ad5c6bb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" alt="" class="img-fluid">
-      </div>
-      <div class="col-md-5">
-        <h3>This is a title</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta in sapiente repudiandae, sint voluptas placeat aliquam ratione, repellat inventore nostrum excepturi quibusdam quisquam magnam nihil nisi! Reprehenderit corrupti ratione perspiciatis.</p>
-      </div>
-    </div>
-    <div class="">
+    <div class="row justify-content-center align-items-center py-3">
       <div class="col-md-5">
         <img src="https://images.unsplash.com/photo-1630016537018-d46c0ad5c6bb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=60" alt="" class="img-fluid">
       </div>
