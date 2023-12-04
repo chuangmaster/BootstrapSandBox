@@ -9,13 +9,13 @@
 <div class="demo">
   <!-- Block level -->
   <div class="row">
-    <div class="col-2">
+    <div class="col-2 text-truncate">
     Praeterea iter est quasdam res quas ex communi.
     </div>
   </div>
   
   <!-- Inline level -->
-  <span class="d-inline-block" style="max-width: 150px;">
+  <span class="d-inline-block text-truncate" style="max-width: 150px;">
     Praeterea iter est quasdam res quas ex communi.
   </span>
 </div>
@@ -27,8 +27,10 @@
     <div class="col-6">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Special title treatment Special title treatment</h5>
-          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quis iste aspernatur quisquam consequatur illolaborum eum sint nemo earum?</p>
+          <h5 class="card-title text-truncate">Special title treatment Special title treatment</h5>
+          <!-- 單行高度為 1.5 rem -->
+          <!-- 限制只顯示 3 行 表示高度為 4.5 rem，並使用 overflow hidden -->
+          <p class="card-text overflow-hidden" style="height: 4.5rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima tempora quis iste aspernatur quisquam consequatur illolaborum eum sint nemo earum?</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
