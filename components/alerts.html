@@ -1,58 +1,58 @@
 <!DOCTYPE html><html lang="zh-TW"><head><title>Alerts</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="images/favicon.ico" rel="shortcut icon"><meta charset="UTF-8"><script src="/javascripts/vendor.js"></script></head><body class="bg-lighter">
 <div class="container main my-5"><div class="row justify-content-center"><main class="col-md-8 post">
-<!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">Alerts</h1><small>檔名：<code>alerts.html</code></small></div>
+<!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">Alerts</h1><small > 檔名：<code>alerts.html</code></small></div>
 <!-- 🔥🔥練習開始🔥🔥 -->
-<h2>範例</h2>
+<h2> 範例 </h2>
 
-<p>使用 alert 加上 alert-{情境色} 製作警告框</p>
+<p> 使用 alert 加上 alert-{情境色} 製作警告框 </p>
 
 <div class="demo">
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-primary" role="alert">
     A simple primary alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-secondary" role="alert">
     A simple secondary alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-success" role="alert">
     A simple success alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-danger" role="alert">
     A simple danger alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-warning" role="alert">
     A simple warning alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-info" role="alert">
     A simple info alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-light" role="alert">
     A simple light alert—check it out!
   </div>
-  <div class="alert 練習" role="alert">
+  <div class="alert alert-dark" role="alert">
     A simple dark alert—check it out!
   </div>
 </div>
 
-<h2>連結顏色</h2>
+<h2> 連結顏色 </h2>
 
-<p>使用 alert-link 套用警告框內的連結色彩</p>
+<p> 使用 alert-link 套用警告框內的連結色彩 </p>
 
 <div class="demo">
   <div class="alert alert-primary" role="alert">
-    A simple primary alert with <a href="#" class="練習">an example link</a>. Give it a click if you like.
+    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
   </div>
   <div class="alert alert-danger" role="alert">
-    A simple danger alert with <a href="#" class="練習">an example link</a>. Give it a click if you like.
+    A simple danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
   </div>
 </div>
 
-<h2>額外的內容</h2>
+<h2> 額外的內容 </h2>
 
 <p>alert 的樣式還包含了 .alert-heading、分隔線、段落等。</p>
 
 <div class="demo">
   <div class="alert alert-success" role="alert">
-    <h4 class="練習">Well done!</h4>
+    <h4 class="alert-heading">Well done!</h4>
     <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
       so that you can see how spacing within an alert works with this kind of content.</p>
     <hr>
@@ -64,10 +64,10 @@
 <h6>You can use <a href="https://bootstrap5.hexschool.com/docs/5.0/utilities/flex/">flexbox utilities</a> and <a
     href="https://icons.getbootstrap.com/">Bootstrap Icons</a> to create alerts with icons. </h6>
 
-<p>使用 Flex 重新對齊以下內容</p>
+<p> 使用 Flex 重新對齊以下內容 </p>
 
 <div class="demo">
-  <div class="alert alert-primary 練習" role="alert">
+  <div class="alert alert-primary d-flex align-items-center" role="alert">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
       class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img"
       aria-label="Warning:">
@@ -80,33 +80,35 @@
   </div>
 </div>
 
-<p>快速使用 Bootstrap Icon 在 Alert 內</p>
+<p> 快速使用 Bootstrap Icon 在 Alert 內 </p>
 
 <ul>
-  <li>載入 Bootstrap ICON CDN</li>
-  <li>加入 ICON，並使用 utilities 調整大小、間距</li>
+  <li> 載入 Bootstrap ICON CDN</li>
+  <li> 加入 ICON，並使用 utilities 調整大小、間距 </li>
 </ul>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 <div class="demo">
   <div class="alert alert-primary d-flex align-items-center" role="alert">
-    練習
+    
+    <i class="bi bi-exclamation-triangle-fill fs-4 me-2"></i>
     <div>
       An example alert with an icon
     </div>
   </div>
 </div>
 
-<h2>移除</h2>
+<h2> 移除 </h2>
 <ul>
-  <li>加上一個關閉按鈕 並賦予 <code>.alert-dismissible</code> 類別，使警報的右上角新增額外的 padding 和關閉按鈕。</li>
-  <li>在關閉按鈕加上 <code>data-bs-dismiss="alert"</code> 屬性來觸發 JavaScript 函式。務必使用 <code>&lt;button&gt;</code> 元素，讓它可以跨裝置正常運行。</li>
-  <li>要以動態方式移除警報，可以使用 <code>.fade</code> 和 <code>.show</code> 類別。</li>
+  <li> 加上一個關閉按鈕 並賦予 <code>.alert-dismissible</code> 類別，使警報的右上角新增額外的 padding 和關閉按鈕。</li>
+  <li> 在關閉按鈕加上 <code>data-bs-dismiss="alert"</code> 屬性來觸發 JavaScript 函式。務必使用 <code>&lt;button&gt;</code> 元素，讓它可以跨裝置正常運行。</li>
+  <li> 要以動態方式移除警報，可以使用 <code>.fade</code> 和 <code>.show</code> 類別。</li>
+  <!-- show 表示顯示，fade 是動態效果 -->
 </ul>
 
 <div class="demo">
-  <div class="alert alert-warning 練習 fade show" role="alert">
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
     <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" 練習 aria-label="Close"></button>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 </div>
 <!-- 🙇🙇練習結束🙇🙇 -->
@@ -290,7 +292,7 @@
     
     </div>
     <div class="mt-3 text-end p-2 bg-light rounded">
-      <small class="text-black-50 fw-light mb-0">文件版本：2022/01/20</small>
+      <small class="text-black-50 fw-light mb-0"> 文件版本：2022/01/20</small>
     </div>
   </ul>
 </div>
@@ -303,7 +305,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-bs5 shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Bootstrap 5 練習手冊</a>
+    <a class="navbar-brand" href="/">Bootstrap 5 練習手冊 </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -331,7 +333,7 @@
 
 <footer class="footer py-2 bg-light">
   <div class="container text-center">
-    <small class="text-black-50 fw-light mb-0">六角學院 Bootstrap 5 課程專屬文件</small>
+    <small class="text-black-50 fw-light mb-0"> 六角學院 Bootstrap 5 課程專屬文件 </small>
   </div>
 </footer>
 <link rel="stylesheet" href="/stylesheets/all.css">
