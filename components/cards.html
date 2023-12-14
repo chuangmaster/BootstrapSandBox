@@ -1,14 +1,14 @@
 <!DOCTYPE html><html lang="zh-TW"><head><title>Cards</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="images/favicon.ico" rel="shortcut icon"><meta charset="UTF-8"><script src="/javascripts/vendor.js"></script></head><body class="bg-lighter">
 <div class="container main my-5"><div class="row justify-content-center"><main class="col-md-8 post">
-<!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">Cards</h1><small>檔名：<code>cards.html</code></small></div>
+<!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">Cards</h1><small > 檔名：<code>cards.html</code></small></div>
 <!-- 🔥🔥練習開始🔥🔥 -->
 <h2>Example</h2>
 
-<p>加入以下 .card 套用卡片效果</p>
+<p> 加入以下 .card 套用卡片效果 </p>
 
 <div class="demo">
   <!-- .card -->
-  <div class="練習" style="width: 18rem;">
+  <div class="card" style="width: 18rem;">
     <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -20,11 +20,11 @@
 
 <h2>Content types</h2>
 <h4>Body</h4>
-<p>卡片的建構區塊為 <code>.card-body</code>。當你需要在卡片填充內容的時候請使用它</p>
+<p> 卡片的建構區塊為 <code>.card-body</code>。當你需要在卡片填充內容的時候請使用它 </p>
 
 <div class="demo">
   <div class="card">
-    <div class="練習">
+    <div class="card-body">
       This is some text within a card body.
     </div>
   </div>
@@ -36,11 +36,11 @@
 <div class="demo">
   <div class="card" style="width: 18rem;">
     <div class="card-body">
-      <h5 class="練習">Card title</h5>
-      <h6 class="練習 mb-2 text-muted">Card subtitle</h6>
+      <h5 class="card-title">Card title</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="練習">Card link</a>
-      <a href="#" class="練習">Another link</a>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
     </div>
   </div>
 </div>
@@ -50,19 +50,19 @@
 
 <div class="demo">
   <div class="card" style="width: 18rem;">
-    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" class="練習" alt="...">
+    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" class="card-img-top" alt="...">
     <div class="card-body">
-      <p class="練習">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
 </div>
 
 <h4>List groups</h4>
-<p>使用 <code>.list-group-flush</code> 在卡片內建立列表群組</p>
-
+<p> 使用 <code>.list-group-flush</code> 在卡片內建立列表群組 </p>
+<!-- 目的是可以去掉邊框線 -->
 <div class="demo">
   <div class="card" style="width: 18rem;">
-    <ul class="list-group 練習">
+    <ul class="list-group list-group-flush">
       <li class="list-group-item">An item</li>
       <li class="list-group-item">A second item</li>
       <li class="list-group-item">A third item</li>
@@ -83,9 +83,9 @@
   </div>
 </div>
 
-<h4>混合樣式</h4>
+<h4> 混合樣式 </h4>
 
-<p>卡片可以搭配 list-group 製作不同組合</p>
+<p> 卡片可以搭配 list-group 製作不同組合 </p>
 
 <div class="demo">
   <div class="card" style="width: 18rem;">
@@ -108,11 +108,11 @@
 
 <h4>Header and footer</h4>
 
-<p>為以下範例加入 .card-header</p>
+<p> 為以下範例加入 .card-header</p>
 
 <div class="demo">
   <div class="card">
-    <div class="練習">
+    <div class="card-header">
       Featured
     </div>
     <div class="card-body">
@@ -123,11 +123,11 @@
   </div>
 </div>
 
-<h6>卡片頁首的樣式可以透過在 <code>&lt;h*&gt;</code> 元素添加 <code>.card-header</code> 來調整</h6>
+<h6> 卡片頁首的樣式可以透過在 <code>&lt;h*&gt;</code> 元素添加 <code>.card-header</code> 來調整 </h6>
 
 <div class="demo">
   <div class="card">
-    <練習 class="card-header">Featured</練習>
+    <h3 class="card-header">Featured</h3 >
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -136,11 +136,11 @@
   </div>
 </div>
 
-<p>為以下範例加入 .card-header, .card-footer</p>
+<p> 為以下範例加入 .card-header, .card-footer</p>
 
 <div class="demo">
   <div class="card text-center">
-    <div class="練習">
+    <div class="card-header">
       Featured
     </div>
     <div class="card-body">
@@ -148,43 +148,46 @@
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-    <div class="練習 text-muted">
+    <div class="card-footer text-muted">
       2 days ago
     </div>
   </div>
 </div>
 
 <h2>Sizing</h2>
-<p>卡片預設沒有特定的起始 <code>width</code>，除非另有聲明，否則它們的寬度將是 100％</p>
+<p> 卡片預設沒有特定的起始 <code>width</code>，除非另有聲明，否則它們的寬度將是 100％</p>
 
-<p>搭配格線系統安排卡片排版</p>
+<p> 搭配格線系統安排卡片排版 </p>
 
 <div class="demo">
-  
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+  <div class="row">
+    <div class="col-6">  
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Special title treatment</h5>
-      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="col-6"> 
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
-  </div>
-
+ </div>
 </div>
 
 <h4>Using utilities</h4>
 
-<p>使用 utilities w-* 限制卡片寬度</p>
+<p> 使用 utilities w-* 限制卡片寬度 </p>
 
 <div class="demo">
-  <div class="card 練習">
+  <div class="card w-50">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -192,7 +195,7 @@
     </div>
   </div>
   
-  <div class="card 練習">
+  <div class="card mt-3 w-75">
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -203,10 +206,10 @@
 
 <h4>Using custom CSS</h4>
 
-<p>直接使用 style 限制寬度也是沒問題的</p>
+<p> 直接使用 style 限制寬度也是沒問題的 </p>
 
 <div class="demo">
-  <div class="card" 練習>
+  <div class="card" style="width: 30%;">
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -217,10 +220,10 @@
 
 <h2>Text alignment</h2>
 
-<p>使用 utilities 調整卡片內文字對齊</p>
+<p> 使用 utilities 調整卡片內文字對齊 </p>
 
 <div class="demo">
-  <div class="card 練習" style="width: 18rem;">
+  <div class="card text-end" style="width: 18rem;">
     <div class="card-body">
       <h5 class="card-title">Special title treatment</h5>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -231,7 +234,7 @@
 
 <h2>Navigation</h2>
 
-<p>搭配 nav-tabs 製作導覽列</p>
+<p> 搭配 nav-tabs 製作導覽列 </p>
 
 
 
@@ -239,7 +242,8 @@
   <div class="card text-center">
     <div class="card-header">
       <!-- 加入 card-header-tabs -->
-      <ul class="nav nav-tabs">
+      <!-- 加入後會讓版型更好看 -->
+      <ul class="nav nav-tabs card-header-tabs">
         <li class="nav-item">
           <a class="nav-link active" aria-current="true" href="#">Active</a>
         </li>
@@ -263,7 +267,8 @@
   <div class="card text-center">
     <div class="card-header">
       <!-- card-header-pills -->
-      <ul class="nav nav-pills">
+      <!-- 會對間距等做些微調整 -->
+      <ul class="nav nav-pills card-header-pills">
         <li class="nav-item">
           <a class="nav-link active" href="#">Active</a>
         </li>
@@ -287,11 +292,11 @@
 
 <h4>Image caps</h4>
 
-<p>使用 .card-img-top, card-img-bottom 將圖片符合卡片視覺效果</p>
+<p> 使用 .card-img-top, card-img-bottom 將圖片符合卡片視覺效果 </p>
 
 <div class="demo">
   <div class="card mb-3">
-    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="練習" alt="...">
+    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="card-img-top" alt="...">
     <!-- object-fit: cover; 是圖片的顯示屬性 -->
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
@@ -305,18 +310,18 @@
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
-    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="練習" alt="...">
+    <img src="https://images.unsplash.com/photo-1580912534328-fbc00d6f7e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=747&q=80" height="270" style="object-fit: cover;" class="card-img-bottom" alt="...">
   </div>
 </div>
 
 <h4>Image overlays</h4>
 
-<p>使用 .card-img, card-img-overlay 將圖片置於背景</p>
+<p> 使用 .card-img, card-img-overlay 將圖片置於背景 </p>
 
 <div class="demo">
   <div class="card bg-dark text-white">
-    <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" height="270" style="object-fit: cover;" class="練習" alt="...">
-    <div class="練習">
+    <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" height="270" style="object-fit: cover;" class="card-img" alt="...">
+    <div class="card-img-overlay">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <p class="card-text">Last updated 3 mins ago</p>
@@ -326,15 +331,15 @@
 
 <h2>Horizontal</h2>
 
-<p>使用格線系統，製作水平類型的排版效果</p>
+<p> 使用格線系統，製作水平類型的排版效果 </p>
 
 <div class="demo">
   <div class="card mb-3" style="max-width: 540px;">
-    <div class="練習">
-      <div class="練習">
+    <div class="row">
+      <div class="col-6">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="img-fluid rounded-start h-100" style="object-fit: cover;" alt="...">
       </div>
-      <div class="練習">
+      <div class="col-6">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -349,17 +354,17 @@
 
 <h4>Background and color</h4>
 
-<p>使用 bg-{情境色} 製作不同顏色的卡片</p>
+<p> 使用 bg-{情境色} 製作不同顏色的卡片 </p>
 
 <div class="demo">
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card bg-primary mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body">
       <h5 class="card-title">Primary card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card bg-warning mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body">
       <h5 class="card-title">Secondary card title</h5>
@@ -370,17 +375,17 @@
 
 <h4>Border</h4>
 
-<p>使用 border-{情境色} 製作不同邊框色彩的卡片</p>
+<p> 使用 border-{情境色} 製作不同邊框色彩的卡片 </p>
 
 <div class="demo">
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body text-primary">
       <h5 class="card-title">Primary card title</h5>
       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     </div>
   </div>
-  <div class="card 練習 mb-3" style="max-width: 18rem;">
+  <div class="card border-secondary mb-3" style="max-width: 18rem;">
     <div class="card-header">Header</div>
     <div class="card-body text-secondary">
       <h5 class="card-title">Secondary card title</h5>
@@ -392,7 +397,7 @@
 <h4>Mixins utilities</h4>
 
 <div class="demo">
-  <div class="card border-success mb-3" style="max-width: 18rem;">
+  <div class="card border-success text-success mb-3" style="max-width: 18rem;">
     <div class="card-header bg-transparent border-success">Header</div>
     <div class="card-body text-success">
       <h5 class="card-title">Success card title</h5>
@@ -403,14 +408,14 @@
 </div>
 
 <h2>Card layout</h2>
-<p><b>這些排版選項還不是響應式的</b></p>
+<p><b > 這些排版選項還不是響應式的 </b></p>
 
 <h4>Card groups</h4>
 
-<p>加入 .card-group 製作群組卡片</p>
+<p> 加入 .card-group 製作群組卡片 </p>
 
 <div class="demo">
-  <div class="練習">
+  <div class="card-group">
     <div class="card">
       <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
       <div class="card-body">
@@ -438,7 +443,7 @@
   </div>
 </div>
 
-<p>當在卡片群組使用 .card-footer，它們的內容將會自動對齊</p>
+<p> 當在卡片群組使用 .card-footer，它們的內容將會自動對齊 </p>
 
 <div class="demo">
   <div class="card-group">
@@ -448,7 +453,7 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
-      <div class="練習">
+      <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
@@ -458,7 +463,7 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
       </div>
-      <div class="練習">
+      <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
@@ -468,24 +473,24 @@
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
       </div>
-      <div class="練習">
+      <div class="card-footer">
         <small class="text-muted">Last updated 3 mins ago</small>
       </div>
     </div>
   </div>
 </div>
 
-<h4>網格卡片</h4>
+<h4> 網格卡片 </h4>
 
-<p>使用行列式製作</p>
+<p> 使用行列式製作 </p>
 
 <ul>
-  <li>行動版為單欄</li>
-  <li>桌面版為雙欄</li>
+  <li> 行動版為單欄 </li>
+  <li> 桌面版為雙欄 </li>
 </ul>
 
 <div class="demo">
-  <div class="row 練習">
+  <div class="row row-cols-1 g-4 row-cols-lg-2">
     <div class="col">
       <div class="card">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
@@ -525,12 +530,12 @@
   </div>
 </div>
 
-<p>如果需要相等高度時，把 <code>.h-100</code> 添加於卡片上。如果希望卡片預設就是等高，可以在 Sass 設置 $card-height: 100%。</p>
+<p> 如果需要相等高度時，把 <code>.h-100</code> 添加於卡片上。如果希望卡片預設就是等高，可以在 Sass 設置 $card-height: 100%。</p>
 
 <div class="demo">
   <div class="row row-cols-1 row-cols-md-3 g-4">
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -539,7 +544,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -548,7 +553,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -557,7 +562,7 @@
       </div>
     </div>
     <div class="col">
-      <div class="card 練習">
+      <div class="card h-100">
         <img src="https://images.unsplash.com/photo-1527777309916-b59323b01809?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -568,7 +573,7 @@
   </div>
 </div>
 
-<p>卡片頁尾也會自動對齊</p>
+<p> 卡片頁尾也會自動對齊 </p>
 
 <div class="demo">
   <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -791,7 +796,7 @@
     
     </div>
     <div class="mt-3 text-end p-2 bg-light rounded">
-      <small class="text-black-50 fw-light mb-0">文件版本：2022/01/20</small>
+      <small class="text-black-50 fw-light mb-0"> 文件版本：2022/01/20</small>
     </div>
   </ul>
 </div>
@@ -804,7 +809,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-bs5 shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Bootstrap 5 練習手冊</a>
+    <a class="navbar-brand" href="/">Bootstrap 5 練習手冊 </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -832,7 +837,7 @@
 
 <footer class="footer py-2 bg-light">
   <div class="container text-center">
-    <small class="text-black-50 fw-light mb-0">六角學院 Bootstrap 5 課程專屬文件</small>
+    <small class="text-black-50 fw-light mb-0"> 六角學院 Bootstrap 5 課程專屬文件 </small>
   </div>
 </footer>
 <link rel="stylesheet" href="/stylesheets/all.css">
