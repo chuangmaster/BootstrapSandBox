@@ -1,31 +1,31 @@
 <!DOCTYPE html><html lang="zh-TW"><head><title>List group</title><meta name="viewport" content="width=device-width, initial-scale=1"><link href="images/favicon.ico" rel="shortcut icon"><meta charset="UTF-8"><script src="/javascripts/vendor.js"></script></head><body class="bg-lighter">
 <div class="container main my-5"><div class="row justify-content-center"><main class="col-md-8 post">
-<!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">List group</h1><small>檔名：<code>listGroup.html</code></small></div>
+<!-- 章節標題 --><div class="mb-4"><h1 class="mt-0 text-muted">List group</h1><small > 檔名：<code>listGroup.html</code></small></div>
 <!-- 🔥🔥練習開始🔥🔥 -->
 <h2>Basic example</h2>
 
 <ul>
-  <li>外層使用 list-group</li>
-  <li>內層使用 list-group-item</li>
+  <li> 外層使用 list-group</li>
+  <li> 內層使用 list-group-item</li>
 </ul>
 
 <div class="demo">
-  <ul class="練習">
-    <li class="練習">An item</li>
-    <li class="練習">A second item</li>
-    <li class="練習">A third item</li>
-    <li class="練習">A fourth item</li>
-    <li class="練習">And a fifth one</li>
+  <ul class="list-group">
+    <li class="list-group-item">An item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
   </ul>
 </div>
 
 <h2>Active items</h2>
 
-<p>加上 .active 啟用視覺效果</p>
+<p> 加上 .active 啟用視覺效果 </p>
 
 <div class="demo">
   <ul class="list-group">
-    <li class="list-group-item 練習" aria-current="true">An active item</li>
+    <li class="list-group-item active" aria-current="true">An active item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
@@ -35,11 +35,11 @@
 
 <h2>Disabled items</h2>
 
-<p>加上 disabled 禁用特定項目</p>
+<p> 加上 disabled 禁用特定項目 </p>
 
 <div class="demo">
   <ul class="list-group">
-    <li class="list-group-item 練習" aria-disabled="true">A disabled item</li>
+    <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
     <li class="list-group-item">A fourth item</li>
@@ -48,21 +48,21 @@
 </div>
 
 <h2>Links and buttons</h2>
-<p>使用 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> ，並加入 <code>.list-group-item-action</code> 來創建具有 hover、禁用和啟用狀態的動態列表群組</p>
-<p><b>確保不要在這裡使用標準的 <code>.btn</code></b></p>
+<p> 使用 <code>&lt;a&gt;</code> 或 <code>&lt;button&gt;</code> ，並加入 <code>.list-group-item-action</code> 來創建具有 hover、禁用和啟用狀態的動態列表群組 </p>
+<p><b > 確保不要在這裡使用標準的 <code>.btn</code></b></p>
 
-<p>將以下結構改為 a 標籤</p>
+<p> 將以下結構改為 a 標籤 </p>
 
 <div class="demo">
   <div class="list-group">
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
+    <a href="#" class="list-group-item">A second item</a>
+    <a href="#" class="list-group-item">A third item</a>
+    <a href="#" class="list-group-item">A fourth item</a>
+    <a href="#" class="list-group-item">And a fifth one</a>
   </div>
 </div>
 
-<p>對於 <code>&lt;button&gt;</code>，你也可以使用 disabled 屬性而不是 <code>.disabled</code> class</p>
+<p> 對於 <code>&lt;button&gt;</code>，你也可以使用 disabled 屬性而不是 <code>.disabled</code> class</p>
 
 <div class="demo">
   <div class="list-group">
@@ -78,31 +78,31 @@
 
 <h2>Flush</h2>
 
-<p>使用 .list-group-flush 取消外框視覺效果</p>
+<p> 使用 .list-group-flush 取消外框視覺效果 </p>
 
 <div class="demo">
-  <ul class="list-group 練習">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item list-group-item-action">An item</li>
+    <li class="list-group-item list-group-item-action">A second item</li>
+    <li class="list-group-item list-group-item-action">A third item</li>
+    <li class="list-group-item list-group-item-action">A fourth item</li>
+    <li class="list-group-item list-group-item-action">And a fifth one</li>
   </ul>
 </div>
 
 <h2>Numbered</h2>
 
-<p>使用 ol 標籤搭配 .list-group-numbered 為項目加上數值</p>
+<p> 使用 ol 標籤搭配 .list-group-numbered 為項目加上數值 </p>
 
 <div class="demo">
-  <ol class="list-group 練習">
+  <ol class="list-group list-group-numbered ">
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Cras justo odio</li>
   </ol>
 </div>
 
-<p>運用範例</p>
+<p> 運用範例 </p>
 
 <div class="demo">
   <ol class="list-group list-group-numbered">
@@ -132,15 +132,15 @@
 
 <h2>Horizontal</h2>
 
-<p>使用 list-group-horizontal 及 list-group-horizontal-{中斷點} 將項目改為水平排列</p>
+<p> 使用 list-group-horizontal 及 list-group-horizontal-{中斷點} 將項目改為水平排列 </p>
 
 <div class="demo">
-  <ul class="list-group 練習">
+  <ul class="list-group list-group-horizontal">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
   </ul>
-  <ul class="list-group 練習">
+  <ul class="list-group list-group-horizontal-lg">
     <li class="list-group-item">An item</li>
     <li class="list-group-item">A second item</li>
     <li class="list-group-item">A third item</li>
@@ -149,33 +149,33 @@
 
 <h2>Contextual classes</h2>
 
-<p>使用 .list-group-item-{情境色} 製作不同底色的列表</p>
+<p> 使用 .list-group-item-{情境色} 製作不同底色的列表 </p>
 
 <div class="demo">
   <ul class="list-group">
     <li class="list-group-item">A simple default list group item</li>
-    <li class="list-group-item 練習">A simple primary list group item</li>
-    <li class="list-group-item 練習">A simple secondary list group item</li>
-    <li class="list-group-item 練習">A simple success list group item</li>
-    <li class="list-group-item 練習">A simple danger list group item</li>
-    <li class="list-group-item 練習">A simple warning list group item</li>
-    <li class="list-group-item 練習">A simple info list group item</li>
-    <li class="list-group-item 練習">A simple light list group item</li>
-    <li class="list-group-item 練習">A simple dark list group item</li>
+    <li class="list-group-item list-group-item-primary">A simple primary list group item</li>
+    <li class="list-group-item list-group-item-secondary">A simple secondary list group item</li>
+    <li class="list-group-item list-group-item-success">A simple success list group item</li>
+    <li class="list-group-item list-group-item-danger">A simple danger list group item</li>
+    <li class="list-group-item list-group-item-warning">A simple warning list group item</li>
+    <li class="list-group-item list-group-item-info">A simple info list group item</li>
+    <li class="list-group-item list-group-item-light">A simple light list group item</li>
+    <li class="list-group-item list-group-item-dark">A simple dark list group item</li>
   </ul>
 </div>
 
-<p>也可以使用 <code>.list-group-item-action</code>。請注意，在前面的範例中不存在 hover 樣式。另外還有支持 <code>.active</code> 狀態，應用它來指示情境列表群組項目上的啟用狀態</p>
+<p> 也可以使用 <code>.list-group-item-action</code>。請注意，在前面的範例中不存在 hover 樣式。另外還有支持 <code>.active</code> 狀態，應用它來指示情境列表群組項目上的啟用狀態 </p>
 
 <div class="demo">
   <div class="list-group">
-    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+    <a href="#" class="list-group-item list-group-item-action active ">A simple default list group item</a>
     
-    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-primary active ">A simple primary list group item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
+    <a href="#" class="list-group-item list-group-item-action list-group-item-warning ">A simple warning list group item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
     <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
@@ -184,19 +184,19 @@
 
 <h2>With badges</h2>
 
-<p>使用 flex 搭配 badge</p>
+<p> 使用 flex 搭配 badge</p>
 
 <div class="demo">
   <ul class="list-group">
-    <li class="list-group-item 練習">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
       A list item
       <span class="badge bg-primary rounded-pill">14</span>
     </li>
-    <li class="list-group-item 練習">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
       A second list item
       <span class="badge bg-primary rounded-pill">2</span>
     </li>
-    <li class="list-group-item 練習">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
       A third list item
       <span class="badge bg-primary rounded-pill">1</span>
     </li>
@@ -235,7 +235,7 @@
 </div>
 
 <h2>Checkboxes and radios</h2>
-<p>可以在不使用 <code>&lt;label&gt;</code> 的情況下使用它們，但請記住要包含 <code>aria-label</code> 以及必要的內容</p>
+<p> 可以在不使用 <code>&lt;label&gt;</code> 的情況下使用它們，但請記住要包含 <code>aria-label</code> 以及必要的內容 </p>
 
 <div class="demo">
   <ul class="list-group">
@@ -262,8 +262,8 @@
   </ul>
 </div>
 
-<h4>將 <code>&lt;label&gt;</code> 作為 <code>.list-group-item</code> 使用以創造較大的點擊區域</h4>
-
+<h4> 將 <code>&lt;label&gt;</code> 作為 <code>.list-group-item</code> 使用以創造較大的點擊區域 </h4>
+<!-- 預設的 label 包 input, 如果不寫 for 可以找到預設的 input, 但建議加上 for 對上 id -->
 <div class="demo">
   <div class="list-group">
     <label class="list-group-item">
@@ -469,7 +469,7 @@
     
     </div>
     <div class="mt-3 text-end p-2 bg-light rounded">
-      <small class="text-black-50 fw-light mb-0">文件版本：2022/01/20</small>
+      <small class="text-black-50 fw-light mb-0"> 文件版本：2022/01/20</small>
     </div>
   </ul>
 </div>
@@ -482,7 +482,7 @@
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-bs5 shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">Bootstrap 5 練習手冊</a>
+    <a class="navbar-brand" href="/">Bootstrap 5 練習手冊 </a>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -510,7 +510,7 @@
 
 <footer class="footer py-2 bg-light">
   <div class="container text-center">
-    <small class="text-black-50 fw-light mb-0">六角學院 Bootstrap 5 課程專屬文件</small>
+    <small class="text-black-50 fw-light mb-0"> 六角學院 Bootstrap 5 課程專屬文件 </small>
   </div>
 </footer>
 <link rel="stylesheet" href="/stylesheets/all.css">
