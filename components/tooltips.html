@@ -13,7 +13,7 @@
 </ul>
 
 <div class="demo">
-  <button type="button" class="btn btn-secondary" 練習>
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" title="我是tooltip文字">
     Tooltip on top
   </button>
 </div>
@@ -21,16 +21,16 @@
 <p>使用 data-bs-placement={ top, right, bottom, left } 來改變 tooltip 的呈現方向</p>
 
 <div class="demo">
-  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" 練習 title="Tooltip on top">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
     Tooltip on top
   </button>
-  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" 練習 title="Tooltip on right">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
     Tooltip on right
   </button>
-  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" 練習 title="Tooltip on bottom">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
     Tooltip on bottom
   </button>
-  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" 練習 title="Tooltip on left">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
     Tooltip on left
   </button>
 </div>
@@ -38,12 +38,12 @@
 <p>加入自定義 HTML:</p>
 
 <ul>
-  <li>加入 data-bs-html="true"</li>
+  <li>加入 xzz</li>
   <li>title 內使用 html 結構</li>
 </ul>
 
 <div class="demo">
-  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" 練習 title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+  <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
     Tooltip with HTML
   </button>
 </div>
@@ -57,15 +57,15 @@
   <li>補上 <code>tabindex="0"</code></li>
 </ul>
 
-<span class="d-inline-block">
-  <button class="btn btn-primary" type="button" data-bs-toggle="tooltip" title="Disabled tooltip" disabled>Disabled button</button>
+<span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" title="Disabled tooltip">
+  <button class="btn btn-primary"  type="button"  disabled>Disabled button</button>
 </span>
 
 <script>
-  // var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  // var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  //   return new bootstrap.Tooltip(tooltipTriggerEl)
-  // })
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
 </script>
 <!-- 🙇🙇練習結束🙇🙇 -->
 </main>
